@@ -4,7 +4,7 @@ export class ARCADE_FILTER{
 
         this.update = function(fps){
             if(this.offset < canW){
-                this.offset += 5
+                this.offset += fps
             } else{
                 this.offset = -860
             }
@@ -12,6 +12,9 @@ export class ARCADE_FILTER{
         }
 
         this.render = function(ctx){
+
+            //A única forma que encontrei de replicar este efeito sem comprometer a perfomance foi renderizar cada linha.
+
             //fundo 
             ctx.fillStyle = 'rgba(161, 161, 161, 0.269)'
             ctx.fillRect(0, 0, canW, CanH)
