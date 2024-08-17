@@ -13,7 +13,7 @@ export class ARCADE_FILTER{
 
         this.render = function(ctx){
             //fundo 
-            ctx.fillStyle = 'rgba(161, 161, 161, 0.969)'
+            ctx.fillStyle = 'rgba(161, 161, 161, 0.269)'
             ctx.fillRect(0, 0, canW, CanH)
 
             //barras
