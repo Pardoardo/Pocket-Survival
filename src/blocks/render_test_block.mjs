@@ -1,7 +1,7 @@
 export class RENDER_TEST_BLOCK{
     constructor(x, y){
         this.pos = {x, y}
-        this.size = {w: 13, h: 13}
+        this.size = {w: 14, h: 14}
         this.sprite = new Image()
         this.sprite.src = "../res/icons.png"
         

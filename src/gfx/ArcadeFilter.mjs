@@ -4,7 +4,7 @@ export class ARCADE_FILTER{
 
         this.update = function(fps){
             if(this.offset < canW){
-                this.offset += fps
+                this.offset += 10
             } else{
                 this.offset = -860
             }
